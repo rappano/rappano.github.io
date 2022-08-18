@@ -1,0 +1,306 @@
+/* import font google */
+@import url(https://fonts.google.com/specimen/Poppins);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    background-color: #B8F1B0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5 ease;
+}
+
+header .brand {
+    color: #4E944F;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigasi {
+    position: relative;
+}
+
+header .navigasi a {
+    color: #4E944F;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+header .navigasi a:hover {
+    color: aliceblue;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+.home .content1 {
+    width: 500px;
+}
+
+.home .content1 h2 {
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.home .content1 h2 span {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.animasi-text {
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+.animasi-text h3 {
+    color: aliceblue;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+
+.animasi-text h3:nth-child(1) {
+    animation: text-move 10s infinite;
+}
+
+@keyframes text-move {
+    0% {
+        margin-top: 0;
+    }
+
+    25% {
+        margin-top: -70px;
+    }
+
+    50% {
+        margin-top: -140px;
+    }
+
+    75% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+.btns {
+    background-color: #B8F1B0;
+    color: gold;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.btns:hover {
+    background: white;
+    color: #3a6cf4;
+}
+
+/* KONTEN KANAN */
+.home .content2 {
+    width: 700px;
+}
+
+/* FOTO DI HALAMAN HOME */
+.home .img {
+    border-radius: 50%;
+    width: 100%;
+    position: center;
+    display: flex;
+}
+
+/* ABOUT */
+.about {
+    min-height: 100vh;
+}
+
+.about .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about .content .col-left {
+    position: relative;
+    width: 30%;
+}
+
+.about .content .col-right {
+    position: relative;
+    width: 65%;
+}
+
+.about .content .col-left .img-card {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+.about .content .col-left .img-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-title {
+    position: relative;
+    color: #4E944F;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+/* PROJECT */
+.project {
+    min-height: 100vh;
+}
+
+.project .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project .content .card {
+    width: 250px;
+    margin: 15px;
+}
+
+.project .content .img-card {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project .content .img-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.project .content .img-card img:hover {
+    transform: scale(1.2);
+}
+
+/* KONTAK */
+.kontak {
+    min-height: 100vh;
+    text-align: center;
+}
+
+.kontak .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.kontak .content .card {
+    width: 100px;
+    margin: 15px;
+}
+
+.kontak .content .img-card {
+    position: relative;
+    width: 100%;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.kontak .content .img-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.kontak .content .img-card img:hover {
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background: #B8F1B0;
+    color: #4E944F;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer a {
+    color: #4E944F;
+    font-weight: 600;
+    text-decoration: none;
+}
+
